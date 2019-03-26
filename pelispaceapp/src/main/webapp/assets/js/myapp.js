@@ -39,9 +39,6 @@ $(function() {
 	default:
 		if (menu == "Home")
 			break;
-//		$('#listaProducto').addClass('active');
-		$('#a_' + menu).addClass('active');
-		break;
 	}
 	
 	var $table = $('#listaProductoTabla');
@@ -70,8 +67,6 @@ $(function() {
 					},
 					columns : [
 							{
-								
-								
 								data : 'imagen',
 								bSortable : false,
 								mRender : function(data, type, row) {

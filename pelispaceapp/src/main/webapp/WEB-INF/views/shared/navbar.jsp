@@ -10,7 +10,7 @@
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
                 <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
-                <!-- RD Navbar Brand--><a href="${contextRoot}" class="rd-navbar-brand"><img src="${images}/logo.png" alt="" width="40" height="20"/></a>
+                <!-- RD Navbar Brand--><a href="${contextRoot}/" class="rd-navbar-brand"><img src="${images}/logo.png" alt="" width="40" height="20"/></a>
               </div>
               <div class="rd-navbar-nav-wrap">
                 <!-- RD Navbar Nav-->

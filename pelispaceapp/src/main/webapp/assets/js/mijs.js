@@ -58,15 +58,3 @@ function autoPlayYouTubeModal() {
         });
     });
 };
-
-
-var number = Math.round(userDetails.length / elements_per_page);//get total page number
-for(i=0;i<=number;i++) {
-$('.nav').append('<button class="btn">'+i+'</button>');//append a button for each page
-}
-$('.nav button').click(function(){//bind a click event
-var start = $(this).text();//get the current page
-table.empty();//empty the table
-limit = 3*(parseInt(start)+1) > max_size ? max_size: 3*(parseInt(start)+1);//set the limit to max size if the limit is bigger then the max size
-goFun(start*3,limit); //populate the table
-});

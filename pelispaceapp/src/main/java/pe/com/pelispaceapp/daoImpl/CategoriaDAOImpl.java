@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import pe.com.pelispaceapp.dao.CategoriaDAO;
 import pe.com.pelispaceapp.dto.Categoria;
+import pe.com.pelispaceapp.dto.Producto;
 
 @Repository("categoriaDAO")
 @Transactional
@@ -67,5 +68,15 @@ public class CategoriaDAOImpl implements CategoriaDAO{
 			ex.printStackTrace();
 			return false;
 		}	
+	}
+
+	@Override
+	public List<Categoria> listActiveCategorias() {
+		String selectActiveCategoria = "FROM Categoria WHERE activo = :activo";
+		return sessionFactory
+				.getCurrentSession()
+					.createQuery(selectActiveCategoria, Categoria.class)
+						.setParameter("activo", true)
+							.getResultList();
 	}
 }

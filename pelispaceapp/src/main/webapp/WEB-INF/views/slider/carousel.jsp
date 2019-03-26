@@ -1,5 +1,7 @@
+
+	<script src="${js}/app.js"></script>
    <div class="subtituloHeader1">
-		<header class="page_header1"><h1><span>MAS VISTAS</span></h1></header>
+		<header class="page_header1"><h1><span>Estrenos</span></h1></header>
 	</div>
     
 	 <div class="container11">

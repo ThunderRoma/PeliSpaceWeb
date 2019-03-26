@@ -8,15 +8,27 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import pe.com.pelispaceapp.dao.CategoriaDAO;
 import pe.com.pelispaceapp.dao.ProductoDAO;
+import pe.com.pelispaceapp.dto.Categoria;
 import pe.com.pelispaceapp.dto.Producto;
 
 @Controller
 @RequestMapping("/json/data")
 public class JsonDataController {
+	
+	@Autowired
+	private CategoriaDAO categoriaDAO;
 
 	@Autowired
 	private ProductoDAO productoDAO;
+	
+	@RequestMapping("/all/categorias")
+	@ResponseBody
+	public List<Categoria> getAllCategorias() {
+		return categoriaDAO.listActiveCategorias();
+				
+	}
 	
 	@RequestMapping("/all/productos")
 	@ResponseBody
