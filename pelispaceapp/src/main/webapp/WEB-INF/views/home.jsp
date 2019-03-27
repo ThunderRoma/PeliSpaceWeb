@@ -1,4 +1,4 @@
-	<div class="wrapper" ng-init="pCtrl.fetchProductos()">
+	<div class="wrapper">
 		<%@include file="./slider/carousel.jsp"%>
 	<div class="wrapper">
 		<div class="subtituloHeader2">

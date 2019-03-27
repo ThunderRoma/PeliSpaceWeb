@@ -6,7 +6,7 @@
     
 	 <div class="container11" ng-app="App">
 	  <div class="slideshow11" ng-controller="ControllerApp as pCtrl">
-	    <div class="carrousel11">
+	    <div class="carrousel11" ng-init="pCtrl.fetchProductos()">
 	      	<figure class="shadow11" ng-repeat="productos in pCtrl.mvProductos"><a ng-href="${contextRoot}/ver/{{productos.id}}/pelicula"><img src="${images}/productos/{{productos.imagen}}"/></a></figure>
 		</div>
 	  </div>
