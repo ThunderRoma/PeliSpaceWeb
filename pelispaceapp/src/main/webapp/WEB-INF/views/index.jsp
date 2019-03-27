@@ -35,7 +35,7 @@
 <%-- <script src="${js}/modernizr.custom.17475.js"></script> --%>
 <script src="${js}/jquery.min.js"></script>
 <script src="${js}/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="${js}/angular.js"></script>
 <script src="${js}/app.js"></script>
 <script src="${js}/myapp.js"></script>
 </head>

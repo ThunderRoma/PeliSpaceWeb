@@ -10,7 +10,7 @@ app.controller('ControllerApp', function($http) {
 	me.fetchProductos = function() {
 		
 		
-		$http.get('/innovatekapp/json/data/mv/productos')
+		$http.get('/json/data/mv/productos')
 			.then(function(response) {
 				me.mvProductos = response.data;
 		});
