@@ -9,7 +9,7 @@
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
-<html lang="es" ng-app="App">
+<html lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,11 +35,9 @@
 <%-- <script src="${js}/modernizr.custom.17475.js"></script> --%>
 <script src="${js}/jquery.min.js"></script>
 <script src="${js}/jquery-migrate-1.2.1.min.js"></script>
-<script src="${js}/angular.js"></script>
-<script src="${js}/app.js"></script>
 <script src="${js}/myapp.js"></script>
 </head>
-<body ng-controller="ControllerApp as pCtrl">
+<body>
 <div class="se-pre-con"></div>
 <div class="wrapper">
 	<%@include file="./shared/navbar.jsp"%>

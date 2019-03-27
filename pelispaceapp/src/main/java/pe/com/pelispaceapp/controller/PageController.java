@@ -36,10 +36,6 @@ public class PageController {
 		logger.debug("Inside PageController index method - DEBUG");
 		
 		mv.addObject("categorias", categoriaDAO.list());
-		
-		if(logout!=null) {
-			mv.addObject("message", "Su session se ha cerrado correctamente!");			
-		}
 		mv.addObject("userClickHome",true);
 		return mv;
 	}
@@ -74,18 +70,6 @@ public class PageController {
 		return mv;
 	}
 	
-//	@RequestMapping(value = "/show/all/productos")
-//	public ModelAndView showAllProductos() {		
-//		ModelAndView mv = new ModelAndView("index");		
-//		mv.addObject("title","All Productos");
-//		mv.addObject("name","PRODUCTOS");
-//		mv.addObject("titleHead","Innovatek - Products");
-//		mv.addObject("categorias", categoriaDAO.list());
-//		
-//		mv.addObject("userClickAllProductos",true);
-//		return mv;				
-//	}
-	
 	@RequestMapping(value = "/categoria/{id}/productos")
 	public ModelAndView showCategoriaProductos(@PathVariable("id") int id) {		
 		ModelAndView mv = new ModelAndView("index");
@@ -93,10 +77,8 @@ public class PageController {
 		Categoria categoria = null;
 		categoria = categoriaDAO.get(id);
 		mv.addObject("title",categoria.getNombre());
-//		mv.addObject("name","PRODUCTOS");
 		mv.addObject("titleHead","PeliSpace - Peliculas");
 		mv.addObject("categorias", categoriaDAO.list());
-		mv.addObject("productos", productoDAO.list());
 		mv.addObject("categoria", categoria);
 		mv.addObject("userClickCategoryProducts",true);
 		return mv;				
@@ -106,7 +88,6 @@ public class PageController {
 	public ModelAndView showSingleProduct(@PathVariable int id) throws ProductNotFoundException {
 		
 		ModelAndView mv = new ModelAndView("index");
-//		mv.addObject("name","DETALLE");
 		mv.addObject("titleHead","PeliSpace - Detalle");
 		
 		Producto producto = productoDAO.get(id);
@@ -120,7 +101,6 @@ public class PageController {
 		mv.addObject("title", producto.getNombre());
 		mv.addObject("producto", producto);
 		mv.addObject("categorias", categoriaDAO.list());
-		mv.addObject("productos", productoDAO.list());
 		mv.addObject("userClickShowProduct", true);
 		return mv;
 		
