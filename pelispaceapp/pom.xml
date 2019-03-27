@@ -17,7 +17,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 		<spring.security.version>4.2.2.RELEASE</spring.security.version>
 		<hibernate.version>5.2.7.Final</hibernate.version>
 		<jackson.version>2.8.7</jackson.version>
-<!-- 		<mysql.version>5.1.10</mysql.version> -->
+		<mysql.version>5.1.10</mysql.version>
 	</properties>
 	
 	<dependencies>
@@ -77,17 +77,17 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 		
 		<!-- mysql Database -->
 		
-<!-- 		<dependency> -->
-<!--             <groupId>mysql</groupId> -->
-<!--             <artifactId>mysql-connector-java</artifactId> -->
-<!--             <version>${mysql.version}</version> -->
-<!--         </dependency> -->
-		
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.2.2</version>
-		</dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+		
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.postgresql</groupId> -->
+<!-- 			<artifactId>postgresql</artifactId> -->
+<!-- 			<version>42.2.2</version> -->
+<!-- 		</dependency> -->
 
 		
 		<!-- Hibernate Dependency -->		

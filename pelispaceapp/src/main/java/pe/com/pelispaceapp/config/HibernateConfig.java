@@ -17,17 +17,17 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class HibernateConfig {
 	
 //	 Change the below based on the DBMS you choose
-	private final static String DATABASE_URL = "jdbc:postgresql://ec2-23-21-106-241.compute-1.amazonaws.com:5432/du1i2imbpn198?sslmode=require";
-	private final static String DATABASE_DRIVER = "org.postgresql.Driver";
-	private final static String DATABASE_DIALECT = "org.hibernate.dialect.PostgreSQLDialect";
-	private final static String DATABASE_USERNAME = "hgdhskaerhjlfx";
-	private final static String DATABASE_PASSWORD = "4a37c703a11349e29cbd7794c4493cbdf5b30c260d2921876f2c0d49578638fa";
+//	private final static String DATABASE_URL = "jdbc:postgresql://ec2-23-21-106-241.compute-1.amazonaws.com:5432/du1i2imbpn198?sslmode=require";
+//	private final static String DATABASE_DRIVER = "org.postgresql.Driver";
+//	private final static String DATABASE_DIALECT = "org.hibernate.dialect.PostgreSQLDialect";
+//	private final static String DATABASE_USERNAME = "hgdhskaerhjlfx";
+//	private final static String DATABASE_PASSWORD = "4a37c703a11349e29cbd7794c4493cbdf5b30c260d2921876f2c0d49578638fa";
 	
-//	private final static String DATABASE_URL = "jdbc:mysql://localhost:3306/pelispaceapp";
-//	private final static String DATABASE_DRIVER = "com.mysql.jdbc.Driver";
-//	private final static String DATABASE_DIALECT = "org.hibernate.dialect.MySQLDialect";
-//	private final static String DATABASE_USERNAME = "root";
-//	private final static String DATABASE_PASSWORD = "mysqlroma";
+	private final static String DATABASE_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/heroku_85e345bf0fd1c77?reconnect=true";
+	private final static String DATABASE_DRIVER = "com.mysql.jdbc.Driver";
+	private final static String DATABASE_DIALECT = "org.hibernate.dialect.MySQLDialect";
+	private final static String DATABASE_USERNAME = "bec5450aff9cd3";
+	private final static String DATABASE_PASSWORD = "7085acc9";
 		
 		// dataSource bean will be available
 		@Bean("dataSource")
