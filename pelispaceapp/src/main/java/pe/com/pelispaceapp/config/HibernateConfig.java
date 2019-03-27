@@ -23,11 +23,11 @@ public class HibernateConfig {
 //	private final static String DATABASE_USERNAME = "hgdhskaerhjlfx";
 //	private final static String DATABASE_PASSWORD = "4a37c703a11349e29cbd7794c4493cbdf5b30c260d2921876f2c0d49578638fa";
 	
-	private final static String DATABASE_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/heroku_85e345bf0fd1c77?reconnect=true";
+	private final static String DATABASE_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/heroku_33add0aea4f8f19?reconnect=true";
 	private final static String DATABASE_DRIVER = "com.mysql.jdbc.Driver";
 	private final static String DATABASE_DIALECT = "org.hibernate.dialect.MySQLDialect";
-	private final static String DATABASE_USERNAME = "bec5450aff9cd3";
-	private final static String DATABASE_PASSWORD = "7085acc9";
+	private final static String DATABASE_USERNAME = "b72213025b1532";
+	private final static String DATABASE_PASSWORD = "334114c2";
 		
 		// dataSource bean will be available
 		@Bean("dataSource")
